@@ -1,0 +1,9 @@
+.Footer {
+  margin: 0 auto;
+}
+
+.Footer > p {
+  font-size: 14;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}

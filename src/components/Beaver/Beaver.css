@@ -1,0 +1,199 @@
+/*Beaver Classes*/
+.Beaver {
+    background-image: url("../../images/BeaverColorShapes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+    display: grid;
+    align-content: center;
+  }
+  
+  .BeaverGroup {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px; 
+  }
+  
+  .BeaverPhones {
+    max-height: 500px;
+    justify-self: end;
+  }
+
+  .BeaverPhones img {
+    max-height: 500px;
+  }
+
+  .BeaverInfo {
+    max-width: 444px;
+  }
+  
+  .BeaverDescription {
+    background-color: rgba(247, 247, 255, 0.6);
+    box-shadow: 0px 2px 4px rgba(0,0, 0, 0.1);
+    border-radius: 18px;
+    padding: 16px;
+  }
+  
+  .BeaverDescription > p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .BeaverTitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 75px;
+  }
+  
+  .AppIcon {
+    max-width: 64px;
+    max-height: 64px;
+    margin-right: 8px;
+  }
+  
+  .BeaverLinkBox {
+    display: inline-flex;
+    background-color: rgba(247, 247, 255, 0.6);
+    box-shadow: 0px 2px 4px rgba(0,0, 0, 0.1);
+    margin-top: 16px;
+    border-radius: 12px;
+    padding: 8px 8px;
+    margin-right: auto;
+  }
+
+  #beaver-subhead {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  #beaver-explanation-showing {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+      font-weight: 400;
+      overflow: hidden;
+
+      max-height: 150px;
+
+      animation: BeaverTextAnimation;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+  #beaver-explanation-hidden {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    overflow: hidden;
+
+    max-height: 150px;
+
+    animation: BeaverTextAnimationReversed;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  #more-button {
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+
+@keyframes BeaverTextAnimation {
+  0% {
+    max-height: 0px;
+  }
+  100% {
+    max-height: auto;
+  }
+}
+
+@keyframes BeaverTextAnimationReversed {
+  0% {
+    max-height: auto;
+  }
+  100% {
+    max-height: 0px;
+  }
+}
+
+  .BeaverLink {
+    max-height: 45px;
+    margin: 8px;
+
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .BeaverLink:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .BeaverLink > img {
+    max-height: 45px;
+  }
+
+  /* Responsive Support */
+  @media (max-width: 1000px) {
+    .Beaver {
+      height: 1000px;
+    }
+    .BeaverGroup {
+      max-width: 95%;
+      margin: 0 auto 0 auto;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 24px;
+  
+      justify-items: center;
+    }
+
+    .BeaverPhones {
+      justify-self: center;
+    }
+
+    .BeaverInfo p {
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .Beaver {
+      height: 900px;
+    }
+    
+    .BeaverGroup {
+        max-width: 95%;
+    }
+
+    .BeaverPhones {
+        max-width: 95%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .BeaverPhones img {
+      max-width: 95%;
+    }
+
+    .BeaverInfo {
+      max-width: 95%;
+    }
+
+    .BeaverInfo h1 {
+      font-size: 44px;
+    }
+
+    .AppIcon {
+      width: 50px;
+      height: 50px;
+    }
+  }
