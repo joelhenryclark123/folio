@@ -6,7 +6,7 @@ import Beaver from '../components/Beaver/Beaver.js'
 import Helmet from 'react-helmet'
 import { graphql } from "gatsby"
 
-import '../layouts/index.css'
+import './index.css'
 
 const IndexPage = ({data}) => (
   <div>
