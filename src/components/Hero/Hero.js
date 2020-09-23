@@ -73,11 +73,11 @@ class Hero extends React.Component {
 
           {this.renderDescription()}
 
-          <a href="#" onClick={(e) => this.ToggleRundown(e)}>
+          <button onClick={(e) => this.ToggleRundown(e)}>
             <p className="HeroText">{
             this.state.expanded ? "hide" : "about me"
           }</p>
-          </a>
+          </button>
 
         </div>
       </div>
