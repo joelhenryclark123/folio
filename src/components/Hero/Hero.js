@@ -34,7 +34,7 @@ class Hero extends React.Component {
       "I’m a college student who builds stuff. I design & code my own products."
     );
 
-    if (this.state.firstClick == false) {
+    if (this.state.firstClick === false) {
       return(<p></p>)
     } else {
       return(<p id={ this.state.expanded ? "about-me-showing" : "about-me-hidden" }>{aboutMeText}</p>)
