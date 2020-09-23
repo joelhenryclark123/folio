@@ -102,8 +102,19 @@
   }
 
   #more-button {
+    margin-right: auto;
+    text-align: left;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  #more-button > p {
     margin-top: 8px;
+
     margin-bottom: 0px;
+    margin-left: 0px;
+
+    text-align: left;
   }
 
 @keyframes BeaverTextAnimation {

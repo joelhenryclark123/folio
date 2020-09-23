@@ -26,7 +26,7 @@ class Beaver extends React.Component {
 
     renderDescription() {
         if (this.state.firstClick === false) {
-            return(<p></p>)
+            return(<p style={{height: '0px', overflow: 'hidden', margin: '0px'}}>I built this app to solve my personal productivity problems, and it’s evolved to become a viable replacement to general-purpose to do list apps.<br/><br/>It’s designed in Figma, built with SwiftUI and the code's hosted on GitHub. Check it out!</p>)
         } else {
             return(
                 <p id={ this.state.expanded ? "beaver-explanation-showing" : "beaver-explanation-hidden" }>
@@ -55,11 +55,14 @@ class Beaver extends React.Component {
                         </div>
                         <p id="beaver-subhead">Choose your plans, ignore the rest, then relax</p>
                         {this.renderDescription()}
-                        <a href="#" onClick={(e) => this.ToggleRundown(e)}>
-                        <p id="more-button" className="clickableText">{
+
+                        <div id="button-row">
+                        <button id="more-button" onClick={(e) => this.ToggleRundown(e)}>
+                        <p className="clickableText">{
                             this.state.expanded ? "less" : "more"
                         }</p>
-                        </a>
+                        </button>
+                        </div>
                     </div>
                     <div className={"BeaverLinkBox"}>
                         <a className={"BeaverLink"} href={"https://apps.apple.com/us/app/the-beaver-app/id1501987163?ls=1"} target="_blank" rel="noreferrer">

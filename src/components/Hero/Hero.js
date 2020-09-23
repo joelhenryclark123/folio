@@ -73,12 +73,13 @@ class Hero extends React.Component {
 
           {this.renderDescription()}
 
+          <div id="button-row">
           <button onClick={(e) => this.ToggleRundown(e)}>
-            <p className="HeroText">{
-            this.state.expanded ? "hide" : "about me"
-          }</p>
+            <p className="HeroText">
+              { this.state.expanded ? "hide" : "about me" }
+            </p>
           </button>
-
+          </div>
         </div>
       </div>
     )
