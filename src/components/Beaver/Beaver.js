@@ -30,7 +30,7 @@ class Beaver extends React.Component {
         } else {
             return(
                 <p id={ this.state.expanded ? "beaver-explanation-showing" : "beaver-explanation-hidden" }>
-                I built this app to solve my personal productivity problems, and it’s evolved to become a viable replacement to general-purpose to do list apps.<br/><br/>It’s designed in Figma, built with SwiftUI and the code's hosted on GitHub. Check it out!
+                I built this app to solve my productivity needs, and it’s evolved to become a viable replacement for general-purpose to do list apps.<br/><br/>It’s designed with Figma and built with SwiftUI. Check it out!
                 </p>
             )
         }
