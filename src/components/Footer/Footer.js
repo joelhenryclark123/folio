@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => (
   <div className="Footer">
-      <p>Created by Joel Clark in 2020</p>
+      <p>Created by Joel Clark in 2020, with React</p>
   </div>
 )
 
