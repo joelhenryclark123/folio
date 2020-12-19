@@ -31,7 +31,7 @@ class Hero extends React.Component {
 
   renderDescription() {
     const aboutMeText = (
-      "I’m a college student who builds stuff. I design and code consumer-facing apps."
+      "I’m a college student who builds stuff. I design and code digital products."
     );
 
     if (this.state.firstClick === false) {
