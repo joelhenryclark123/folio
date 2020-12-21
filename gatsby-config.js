@@ -8,6 +8,9 @@ module.exports = {
   siteMetadata: {
     title: `Joel Clark`,
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-link`
+  ],
   pathPrefix: "/folio",
 }

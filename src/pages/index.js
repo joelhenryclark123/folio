@@ -5,6 +5,7 @@ import Footer from '../components/Footer/Footer.js'
 import Beaver from '../components/Beaver/Beaver.js'
 import Helmet from 'react-helmet'
 import { graphql } from "gatsby"
+import Header from '../components/Header/Header.js'
 
 import './index.css'
 
@@ -13,7 +14,7 @@ const IndexPage = ({data}) => (
     <Helmet
       title={data.site.siteMetadata.title}
     />
-
+    <Header/>
     <Hero/>
     <Beaver/>
     <div className="Conclusion">
