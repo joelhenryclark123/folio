@@ -14,7 +14,6 @@ const IndexPage = ({data}) => (
     <Helmet
       title={data.site.siteMetadata.title}
     />
-    <Header/>
     <Hero/>
     <Beaver/>
     <div className="Conclusion">
